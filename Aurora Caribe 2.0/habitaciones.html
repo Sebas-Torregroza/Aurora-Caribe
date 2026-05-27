@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conoce nuestras Apart-Suites en Barranquilla: Estándar, Superior y Ejecutiva Premium. Cocina equipada, Wi-Fi 200 Mbps y check-in 24h en El Prado.">
+  <title>Habitaciones | Aurora Caribe · Apart-Hotel Barranquilla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <a href="index.html" class="nav-logo" aria-label="Aurora Caribe - Inicio">
+      AURORA <span>CARIBE</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navMenu" role="list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="habitaciones.html" class="active">Habitaciones</a></li>
+      <li><a href="index.html#servicios">Servicios</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="btn-reservar">RESERVAR</a>
+  </nav>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="page-header" aria-label="Encabezado de habitaciones">
+    <div class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="index.html">INICIO</a> <span aria-hidden="true">/</span> <span class="current">HABITACIONES</span>
+    </div>
+    <h1>NUESTRAS <em>APART</em>-SUITES</h1>
+    <p class="page-header-sub">12 suites disponibles · Cocina equipada · Wi-Fi 200 Mbps · Check-in 24h</p>
+  </header>
+
+  <!-- ═══ FILTROS ═══ -->
+  <div class="filters-bar" role="tablist" aria-label="Filtrar suites por categoría">
+    <span class="filter-label" aria-hidden="true">FILTRAR:</span>
+    <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">TODAS</button>
+    <button class="filter-tab" data-filter="estandar" role="tab" aria-selected="false">ESTÁNDAR</button>
+    <button class="filter-tab" data-filter="superior" role="tab" aria-selected="false">SUPERIOR</button>
+    <button class="filter-tab" data-filter="ejecutiva" role="tab" aria-selected="false">EJECUTIVA</button>
+    <div class="filter-right">
+      <span class="filter-label" aria-hidden="true">ORDENAR POR:</span>
+      <span class="order-label">PRECIO</span>
+    </div>
+  </div>
+
+  <!-- ═══ GRID SUITES ═══ -->
+  <main class="hab-body" id="main-content">
+    <div class="hab-grid" id="suitesGrid">
+
+      <article class="suite-card-full" data-category="estandar" aria-label="Suite Estándar">
+        <div class="suite-img-wrap">
+          <span class="suite-badge">ESTÁNDAR</span>
+          <span class="suite-capacity">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            Hasta 2 personas
+          </span>
+          <!-- Carrusel Estándar -->
+          <div class="carousel" id="carousel-estandar" aria-label="Fotos Suite Estándar">
+            <div class="carousel-track">
+              <img src="img/estandar-1.webp" alt="Suite Estándar — habitación" loading="lazy">
+              <img src="img/estandar-2.webp" alt="Suite Estándar — baño" loading="lazy">
+              <img src="img/estandar-3.webp" alt="Suite Estándar — cocina" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Foto anterior" onclick="moveCarousel('carousel-estandar', -1)">&#8249;</button>
+            <button class="carousel-btn next" aria-label="Foto siguiente" onclick="moveCarousel('carousel-estandar', 1)">&#8250;</button>
+            <div class="carousel-dots" id="dots-estandar">
+              <span class="dot active" onclick="goToSlide('carousel-estandar', 0)"></span>
+              <span class="dot" onclick="goToSlide('carousel-estandar', 1)"></span>
+              <span class="dot" onclick="goToSlide('carousel-estandar', 2)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="suite-body-full">
+          <h2 class="suite-name">Suite Estándar</h2>
+          <p class="suite-desc-full">Acogedora suite con todo lo necesario para una estadía confortable. Ideal para viajeros solos o parejas.</p>
+          <div class="suite-amenities-grid" aria-label="Amenidades">
+            <span>✦ Cocina equipada</span><span>✦ Wi-Fi 200 Mbps</span>
+            <span>✦ TV por cable</span><span>✦ Aire acondicionado</span>
+            <span>✦ Baño privado</span><span>✦ Caja de seguridad</span>
+          </div>
+          <div class="suite-footer-full">
+            <div class="price-block">
+              <span class="price-from">DESDE</span>
+              <span class="price-amount">$180.000</span>
+              <span class="price-unit">/ noche</span>
+            </div>
+            <a href="contacto.html?suite=estandar" class="btn-suite-full">CONSULTAR</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="suite-card-full featured" data-category="superior" aria-label="Suite Superior — Más elegida">
+        <div class="suite-img-wrap">
+          <span class="suite-badge">SUPERIOR</span>
+          <span class="suite-badge-best">MÁS ELEGIDA</span>
+          <span class="suite-capacity">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Hasta 4 personas
+          </span>
+          <!-- Carrusel Superior -->
+          <div class="carousel" id="carousel-superior" aria-label="Fotos Suite Superior">
+            <div class="carousel-track">
+              <img src="img/superior-1.webp" alt="Suite Superior — habitación con balcón" loading="lazy">
+              <img src="img/superior-2.webp" alt="Suite Superior — sala de estar" loading="lazy">
+              <img src="img/superior-3.webp" alt="Suite Superior — baños de lujo" loading="lazy">
+              <img src="img/superior-4.webp" alt="Suite Superior — cocina gourmet" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Foto anterior" onclick="moveCarousel('carousel-superior', -1)">&#8249;</button>
+            <button class="carousel-btn next" aria-label="Foto siguiente" onclick="moveCarousel('carousel-superior', 1)">&#8250;</button>
+            <div class="carousel-dots" id="dots-superior">
+              <span class="dot active" onclick="goToSlide('carousel-superior', 0)"></span>
+              <span class="dot" onclick="goToSlide('carousel-superior', 1)"></span>
+              <span class="dot" onclick="goToSlide('carousel-superior', 2)"></span>
+              <span class="dot" onclick="goToSlide('carousel-superior', 3)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="suite-body-full">
+          <h2 class="suite-name">Suite Superior</h2>
+          <p class="suite-desc-full">Amplio espacio de dos habitaciones con sala de estar y balcón. Perfecta para familias o grupos.</p>
+          <div class="suite-amenities-grid">
+            <span>✦ Cocina completa</span><span>✦ Wi-Fi 200 Mbps</span>
+            <span>✦ 2 baños completos</span><span>✦ Sala de estar</span>
+            <span>✦ Balcón privado</span><span>✦ Lavadora</span>
+          </div>
+          <div class="suite-footer-full">
+            <div class="price-block">
+              <span class="price-from">DESDE</span>
+              <span class="price-amount">$400.000</span>
+              <span class="price-unit">/ noche</span>
+            </div>
+            <a href="contacto.html?suite=superior" class="btn-suite-full">CONSULTAR</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="suite-card-full premium-dark" data-category="ejecutiva" aria-label="Suite Ejecutiva Premium">
+        <div class="suite-img-wrap">
+          <span class="suite-badge gold">EJECUTIVA ★</span>
+          <span class="suite-capacity" style="background:rgba(184,150,46,.2);color:var(--dorado);border:1px solid var(--dorado);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            EJECUTIVO / PAREJA
+          </span>
+          <!-- Carrusel Ejecutiva -->
+          <div class="carousel" id="carousel-ejecutiva" aria-label="Fotos Suite Ejecutiva Premium">
+            <div class="carousel-track">
+              <img src="img/ejecutiva-1.webp" alt="Suite Ejecutiva — vista general con minibar y escritorio" loading="lazy">
+              <img src="img/ejecutiva-2.webp" alt="Suite Ejecutiva — cocina gourmet" loading="lazy">
+              <img src="img/ejecutiva-3.webp" alt="Suite Ejecutiva — dormitorio premium con Smart TV" loading="lazy">
+            </div>
+            <button class="carousel-btn prev" aria-label="Foto anterior" onclick="moveCarousel('carousel-ejecutiva', -1)">&#8249;</button>
+            <button class="carousel-btn next" aria-label="Foto siguiente" onclick="moveCarousel('carousel-ejecutiva', 1)">&#8250;</button>
+            <div class="carousel-dots" id="dots-ejecutiva">
+              <span class="dot active" onclick="goToSlide('carousel-ejecutiva', 0)"></span>
+              <span class="dot" onclick="goToSlide('carousel-ejecutiva', 1)"></span>
+              <span class="dot" onclick="goToSlide('carousel-ejecutiva', 2)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="suite-body-full dark">
+          <h2 class="suite-name gold-text">Suite Ejecutiva Premium</h2>
+          <p class="suite-desc-full muted">Diseñada para el viajero exigente. Escritorio ejecutivo, bañera de lujo y amenidades premium incluidas.</p>
+          <div class="suite-amenities-grid muted">
+            <span>✦ Cocina gourmet</span><span>✦ Wi-Fi 200 Mbps</span>
+            <span>✦ Smart TV 55"</span><span>✦ Escritorio ejecutivo</span>
+            <span>✦ Bañera · Minibar</span><span>✦ Servicio de lavado</span>
+          </div>
+          <div class="suite-footer-full">
+            <div class="price-block">
+              <span class="price-from muted-text">DESDE</span>
+              <span class="price-amount gold-text">$600.000</span>
+              <span class="price-unit muted-text">/ noche</span>
+            </div>
+            <a href="contacto.html?suite=ejecutiva" class="btn-suite-full gold-btn">CONSULTAR</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Tarjeta asesoría -->
+      <div class="asesoria-card" aria-label="Solicitar asesoría personalizada">
+        <p class="asesoria-label">¿NECESITA ASESORÍA?</p>
+        <h3 class="asesoria-title">Encontraremos la suite perfecta para usted</h3>
+        <p class="asesoria-text">Nuestro equipo está disponible para orientarle según sus fechas, número de huéspedes y necesidades específicas.</p>
+        <ul class="asesoria-list" aria-label="Ventajas del servicio de asesoría">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Respuesta en menos de 2 horas
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            Sin costo de reserva anticipada
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            Atención personalizada 24/7
+          </li>
+        </ul>
+        <a href="contacto.html" class="btn-asesor">HABLAR CON UN ASESOR</a>
+      </div>
+
+    </div><!-- /hab-grid -->
+
+    <!-- SERVICIOS ADICIONALES -->
+    <section class="servicios-section" aria-labelledby="servicios-hab-heading">
+      <div class="section-header light">
+        <p class="section-label">COMPLEMENTA TU ESTADÍA</p>
+        <h2 class="section-title light" id="servicios-hab-heading">Servicios adicionales</h2>
+        <p class="section-sub">Disponibles para todas las categorías de suite</p>
+      </div>
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a2 2 0 0 1 2 2v5H16V8Z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          <p class="serv-name">Traslados</p>
+          <p class="serv-desc">Aeropuerto Ernesto Cortissoz</p>
+        </div>
+        <div class="servicio-card">
+          <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <p class="serv-name">Sala de Reuniones</p>
+          <p class="serv-desc">Proyector · Video · Aire</p>
+        </div>
+        <div class="servicio-card">
+          <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8Z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          <p class="serv-name">Desayuno</p>
+          <p class="serv-desc">Continental · A la habitación</p>
+        </div>
+        <div class="servicio-card">
+          <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          <p class="serv-name">Parqueadero</p>
+          <p class="serv-desc">Cubierto · Vigilado 24h</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final" aria-label="Llamado a la acción final">
+      <div class="cta-final-left">
+        <h2 class="cta-final-title">¿Listo para reservar su estadía?</h2>
+        <p class="cta-final-sub">Consulte disponibilidad sin compromiso · Respuesta en menos de 2 horas</p>
+      </div>
+      <a href="contacto.html" class="btn-primary">CONSULTAR DISPONIBILIDAD →</a>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-bottom" style="padding-top:0;border-top:none;">
+      <p class="footer-logo" style="font-size:16px;">AURORA <span>CARIBE</span></p>
+      <p>© 2026 Aurora Caribe S.A.S. · Barranquilla, Colombia · <a href="contacto.html#privacidad-texto">Política de privacidad · Ley 1581 de 2012</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- ═══ ESTILOS CARRUSEL ═══ -->
+  <style>
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: block;
+    }
+    .carousel-track {
+      display: flex;
+      height: 100%;
+      transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+      will-change: transform;
+    }
+    .carousel-track img {
+      min-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+      display: block;
+    }
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(10, 10, 10, 0.55);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.25);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, opacity 0.2s;
+      z-index: 10;
+      padding: 0;
+      opacity: 0;
+    }
+    .suite-img-wrap:hover .carousel-btn { opacity: 1; }
+    .carousel-btn:hover { background: rgba(10,10,10,0.82); }
+    .carousel-btn.prev { left: 10px; }
+    .carousel-btn.next { right: 10px; }
+    .carousel-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 10;
+    }
+    .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.45);
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+    }
+    .dot.active {
+      background: #fff;
+      transform: scale(1.3);
+    }
+  </style>
+
+  <!-- ═══ JAVASCRIPT CARRUSEL ═══ -->
+  <script>
+    (function () {
+      var state = {};
+
+      function initCarousel(id) {
+        state[id] = { index: 0 };
+      }
+
+      function getTotal(id) {
+        return document.querySelectorAll('#' + id + ' .carousel-track img').length;
+      }
+
+      function updateCarousel(id) {
+        var idx   = state[id].index;
+        var track = document.querySelector('#' + id + ' .carousel-track');
+        var dots  = document.querySelectorAll('#dots-' + id.replace('carousel-', '') + ' .dot');
+        if (track) track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+        dots.forEach(function (d, i) {
+          d.classList.toggle('active', i === idx);
+        });
+      }
+
+      window.moveCarousel = function (id, dir) {
+        if (!state[id]) initCarousel(id);
+        var total = getTotal(id);
+        state[id].index = (state[id].index + dir + total) % total;
+        updateCarousel(id);
+      };
+
+      window.goToSlide = function (id, idx) {
+        if (!state[id]) initCarousel(id);
+        state[id].index = idx;
+        updateCarousel(id);
+      };
+
+      // Inicializar todos los carruseles
+      ['carousel-estandar', 'carousel-superior', 'carousel-ejecutiva'].forEach(initCarousel);
+
+      // Soporte swipe táctil
+      document.querySelectorAll('.carousel').forEach(function (el) {
+        var startX = null;
+        var id = el.id;
+        el.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+        el.addEventListener('touchend', function (e) {
+          if (startX === null) return;
+          var diff = startX - e.changedTouches[0].clientX;
+          if (Math.abs(diff) > 40) window.moveCarousel(id, diff > 0 ? 1 : -1);
+          startX = null;
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

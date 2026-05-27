@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a Apart-Hotel Aurora Caribe en Barranquilla. Consulta disponibilidad, precios y reservas. Respuesta en menos de 2 horas.">
+  <title>Contacto | Aurora Caribe · Apart-Hotel Barranquilla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lfgjf4sAAAAAFw9Hg1P2jKIbGEcCgUVCsSBsZFr"></script>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <a href="index.html" class="nav-logo" aria-label="Aurora Caribe - Inicio">
+      AURORA <span>CARIBE</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navMenu" role="list">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="habitaciones.html">Habitaciones</a></li>
+      <li><a href="index.html#servicios">Servicios</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="btn-reservar">RESERVAR</a>
+  </nav>
+
+  <!-- ═══ HEADER ═══ -->
+  <header class="page-header" aria-label="Encabezado de página">
+    <div class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="index.html">INICIO</a> <span aria-hidden="true">/</span> <span class="current">CONTACTO</span>
+    </div>
+    <h1>CONTÁCT<em>ENOS</em></h1>
+    <p class="page-header-sub">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" width="14" height="14"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Respondemos todas las consultas en menos de 2 horas hábiles
+    </p>
+  </header>
+
+  <!-- ═══ CUERPO CONTACTO ═══ -->
+  <main class="contacto-body" id="main-content">
+
+    <!-- FORMULARIO -->
+    <section class="form-col" aria-labelledby="form-heading">
+      <h2 id="form-heading" class="form-title">Formulario de contacto</h2>
+      <p class="form-required-note">Los campos con <span aria-label="asterisco requerido" style="color:var(--dorado)">*</span> son obligatorios.</p>
+
+      <form
+        id="contactForm"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        novalidate
+        aria-label="Formulario de contacto Aurora Caribe"
+      >
+        <!-- Web3Forms: reemplaza YOUR_ACCESS_KEY_HERE con tu clave de web3forms.com -->
+        <input type="hidden" name="access_key" value="d5766837-2c59-4cfa-96e7-fcfa7c5b9300">
+
+        <!-- Asunto del correo que recibirás -->
+        <input type="hidden" name="subject" value="Nueva consulta — Aurora Caribe">
+
+        <!-- Nombre del remitente en el correo -->
+        <input type="hidden" name="from_name" value="Aurora Caribe Web">
+
+        <!-- Activa el correo de confirmación automático al huésped -->
+        <input type="hidden" name="autoresponse" value="true">
+
+        <!-- Honeypot anti-spam de Web3Forms -->
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1">
+
+        <div class="field">
+          <label for="nombre" class="field-label">Nombre Completo <span aria-hidden="true">*</span></label>
+          <input
+            type="text" id="nombre" name="name"
+            placeholder="ej. Carlos Martínez"
+            required
+            autocomplete="name"
+            aria-required="true"
+          >
+          <span class="field-error" id="error-nombre" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="field">
+          <label for="telefono" class="field-label">Teléfono</label>
+          <input
+            type="tel" id="telefono" name="telefono"
+            placeholder="ej. 300 000 0000"
+            autocomplete="tel"
+          >
+        </div>
+
+        <div class="field">
+          <label for="correo" class="field-label">Correo Electrónico <span aria-hidden="true">*</span></label>
+          <!-- name="email" es obligatorio para que Web3Forms envíe la confirmación al huésped -->
+          <input
+            type="email" id="correo" name="email"
+            placeholder="ej. correo@ejemplo.com"
+            required
+            autocomplete="email"
+            aria-required="true"
+          >
+          <span class="field-error" id="error-correo" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="llegada" class="field-label">Fecha de llegada <span aria-hidden="true">*</span></label>
+            <div class="date-inputs">
+              <input type="number" id="llegada-dd" name="llegada_dd" placeholder="DD" min="1" max="31" aria-label="Día de llegada" required>
+              <input type="number" id="llegada-mm" name="llegada_mm" placeholder="MM" min="1" max="12" aria-label="Mes de llegada" required>
+              <input type="number" id="llegada-yyyy" name="llegada_yyyy" placeholder="YYYY" min="2026" max="2030" aria-label="Año de llegada" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="salida-dd" class="field-label">Fecha de salida <span aria-hidden="true">*</span></label>
+            <div class="date-inputs">
+              <input type="number" id="salida-dd" name="salida_dd" placeholder="DD" min="1" max="31" aria-label="Día de salida" required>
+              <input type="number" id="salida-mm" name="salida_mm" placeholder="MM" min="1" max="12" aria-label="Mes de salida" required>
+              <input type="number" id="salida-yyyy" name="salida_yyyy" placeholder="YYYY" min="2026" max="2030" aria-label="Año de salida" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="huespedes" class="field-label">Número de Huéspedes <span aria-hidden="true">*</span></label>
+            <select id="huespedes" name="huespedes" required aria-required="true">
+              <option value="" disabled selected>Seleccionar</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5+">5 o más</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="suite" class="field-label">Tipo de suite</label>
+            <select id="suite" name="suite">
+              <option value="" disabled selected>Seleccionar</option>
+              <option value="estandar">Suite Estándar</option>
+              <option value="superior">Suite Superior</option>
+              <option value="ejecutiva">Suite Ejecutiva Premium</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="mensaje" class="field-label">Mensaje <span aria-hidden="true">*</span></label>
+          <textarea
+            id="mensaje" name="mensaje"
+            placeholder="Cuéntenos sobre su consulta, fechas de interés, necesidades especiales..."
+            rows="5"
+            required
+            aria-required="true"
+          ></textarea>
+          <span class="field-error" id="error-mensaje" role="alert" aria-live="polite"></span>
+        </div>
+
+        <!-- Habeas data -->
+        <div class="habeas-row" id="privacidad">
+          <input type="checkbox" id="habeasData" name="habeas_data" required aria-required="true">
+          <label for="habeasData" class="habeas-label">
+            Acepto el tratamiento de mis datos personales conforme a la
+            <a href="#privacidad-texto">Política de privacidad</a> y la
+            <strong>Ley 1581 de 2012</strong> sobre protección de datos personales. <span aria-hidden="true" style="color:var(--dorado)">*</span>
+          </label>
+        </div>
+        <span class="field-error" id="error-habeas" role="alert" aria-live="polite"></span>
+
+        <button type="submit" class="btn-submit" id="submitBtn" aria-label="Enviar formulario de contacto">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          ENVIAR MENSAJE
+        </button>
+
+        <!-- Confirmación -->
+        <div class="form-success" id="formSuccess" role="alert" aria-live="assertive" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <strong>Mensaje enviado correctamente</strong>
+            <p>Le responderemos a su correo en menos de 2 horas hábiles.</p>
+          </div>
+        </div>
+      </form>
+
+      <!-- Aviso de privacidad -->
+      <div class="privacidad-aviso" id="privacidad-texto" aria-label="Aviso de tratamiento de datos personales">
+        <h3>Aviso de Tratamiento de Datos Personales</h3>
+        <p>De conformidad con la <strong>Ley 1581 de 2012</strong> y el Decreto 1377 de 2013, Aurora Caribe S.A.S. le informa que los datos personales suministrados en este formulario serán tratados con la finalidad de atender su consulta de alojamiento y brindar información sobre nuestros servicios. Sus datos no serán cedidos a terceros sin su autorización. Usted puede ejercer sus derechos de acceso, corrección, supresión y revocación escribiendo a <a href="mailto:infoauroracaribe.co@gmail.com">infoauroracaribe.co@gmail.com</a>.</p>
+      </div>
+    </section>
+
+    <!-- INFO + MAPA -->
+    <aside class="info-col" aria-label="Información de contacto y ubicación">
+      <h2 class="info-heading">Información de Contacto</h2>
+
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <p class="info-label">DIRECCIÓN</p>
+          <p class="info-text">Cra. 54 #72-80, El Prado<br>Barranquilla, Atlántico</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.07 6.07l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+        <div>
+          <p class="info-label">TELÉFONO</p>
+          <a href="tel:+573177519175" class="info-phone">(+57) 317 7519175</a>
+          <p class="info-subtext">Toca para llamar en móvil</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div>
+          <p class="info-label">CORREO</p>
+          <a href="mailto:infoauroracaribe.co@gmail.com" class="info-email">infoauroracaribe.co@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div>
+          <p class="info-label">HORARIO DE ATENCIÓN</p>
+          <p class="info-text">Lun–Vie: 8:00 am – 8:00 pm<br>Sáb–Dom: 9:00 am – 6:00 pm</p>
+          <p class="info-highlight">Check-in disponible 24/7</p>
+        </div>
+      </div>
+
+      <hr class="info-divider" aria-hidden="true">
+      <h3 class="info-heading-sub">UBICACIÓN</h3>
+
+      <div class="mapa-wrap" aria-label="Mapa de ubicación del Apart-Hotel Aurora Caribe">
+        <iframe
+          title="Ubicación Aurora Caribe en Google Maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.0!2d-74.8167!3d11.0041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDAwJzE1LjAiTiA3NMKwNDknMDAuMCJX!5e0!3m2!1ses!2sco!4v1700000000000"
+          width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <a href="https://wa.me/573177519175?text=Hola,%20me%20interesa%20consultar%20disponibilidad%20en%20Aurora%20Caribe" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp a Aurora Caribe">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        CONTACTAR POR WHATSAPP
+      </a>
+    </aside>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-bottom" style="padding-top:0; border-top:none;">
+      <p class="footer-logo" style="font-size:16px;">AURORA <span>CARIBE</span></p>
+      <p>© 2026 Aurora Caribe S.A.S. · <a href="#privacidad-texto">Política de privacidad · Ley 1581 de 2012</a></p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

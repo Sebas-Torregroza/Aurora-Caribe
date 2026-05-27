@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apart-Hotel Aurora Caribe — Suites de lujo en El Prado, Barranquilla. Cocina equipada, Wi-Fi 200 Mbps y Check-in 24h para viajeros de negocios y familias.">
+  <title>Aurora Caribe | Apart-Hotel · Barranquilla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <a href="index.html" class="nav-logo" aria-label="Aurora Caribe - Inicio">
+      AURORA <span>CARIBE</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navMenu" role="list">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="habitaciones.html">Habitaciones</a></li>
+      <li><a href="index.html#servicios">Servicios</a></li>
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a href="contacto.html" class="btn-reservar">RESERVAR</a>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" aria-label="Bienvenida a Aurora Caribe">
+    <div class="hero-overlay"></div>
+    <img
+      src="img/superior-1.webp"
+      alt="Suite de lujo con vista en Apart-Hotel Aurora Caribe, Barranquilla"
+      class="hero-bg"
+      loading="eager"
+    >
+    <div class="hero-content">
+      <p class="hero-tag">Barranquilla · Colombia · El Prado</p>
+      <h1 class="hero-title">AURORA <span>CARIBE</span></h1>
+      <p class="hero-desc">
+        Suites completamente equipadas para viajeros de negocios y<br>
+        familias que exigen comodidad, privacidad y estilo en cada detalle.
+      </p>
+      <div class="hero-ctas">
+        <a href="contacto.html" class="btn-primary">CONSULTAR DISPONIBILIDAD</a>
+        <a href="habitaciones.html" class="btn-outline">VER HABITACIONES</a>
+      </div>
+      <div class="hero-stats" aria-label="Estadísticas del hotel">
+        <div class="stat"><span class="stat-num">12</span><span class="stat-label">APART-SUITES</span></div>
+        <div class="stat"><span class="stat-num">2h</span><span class="stat-label">TIEMPO DE RESPUESTA</span></div>
+        <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">CHECK-IN DISPONIBLE</span></div>
+        <div class="stat"><span class="stat-num">★4.9</span><span class="stat-label">CALIFICACIÓN</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROPUESTA DE VALOR ═══ -->
+  <section class="props-section" aria-label="Beneficios principales">
+    <div class="prop-item">
+      <svg class="prop-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+      <p class="prop-title">Cocina Equipada</p>
+      <p class="prop-sub">Electrodomésticos completos · Utensilios</p>
+    </div>
+    <div class="prop-item">
+      <svg class="prop-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+      <p class="prop-title">Wi-Fi 200 Mbps</p>
+      <p class="prop-sub">Fibra óptica · Ideal para el trabajo remoto</p>
+    </div>
+    <div class="prop-item">
+      <svg class="prop-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <p class="prop-title">Check-in 24h</p>
+      <p class="prop-sub">Sin restricciones de horario</p>
+    </div>
+  </section>
+
+  <!-- ═══ SUITES ═══ -->
+  <section class="suites-section" id="suites" aria-labelledby="suites-heading">
+    <div class="section-header">
+      <p class="section-label">NUESTRAS SUITES</p>
+      <h2 class="section-title" id="suites-heading">Elige tu Apart-Suite Ideal</h2>
+    </div>
+    <div class="suites-grid">
+
+      <article class="suite-card" aria-label="Suite Estándar">
+        <div class="suite-img-wrap">
+          <span class="suite-badge">ESTÁNDAR</span>
+          <img
+            src="img/estandar-1.webp"
+            alt="Habitación Suite Estándar con cama doble y cocina equipada"
+            loading="lazy"
+          >
+        </div>
+        <div class="suite-body">
+          <p class="suite-cat">SUITE ESTÁNDAR · Hasta 2 personas · 1 cama doble</p>
+          <ul class="suite-amenities" aria-label="Amenidades de la Suite Estándar">
+            <li>✦ Cocina equipada</li><li>✦ Wi-Fi 200 Mbps</li>
+            <li>✦ Aire acondicionado</li><li>✦ TV cable</li>
+            <li>✦ Baño privado</li>
+          </ul>
+          <p class="suite-price">Desde <strong>$180.000</strong> / Noche</p>
+          <a href="contacto.html?suite=estandar" class="btn-suite">Consultar Disponibilidad</a>
+        </div>
+      </article>
+
+      <article class="suite-card featured" aria-label="Suite Superior — Más elegida">
+        <div class="suite-img-wrap">
+          <span class="suite-badge">SUPERIOR</span>
+          <span class="suite-badge-best">MÁS ELEGIDA</span>
+          <img
+            src="img/superior-1.webp"
+            alt="Suite Superior con sala de estar y balcón privado"
+            loading="lazy"
+          >
+        </div>
+        <div class="suite-body">
+          <p class="suite-cat">SUITE SUPERIOR · Hasta 4 personas · 2 habitaciones</p>
+          <ul class="suite-amenities" aria-label="Amenidades de la Suite Superior">
+            <li>✦ Cocina completa</li><li>✦ Wi-Fi 200 Mbps</li>
+            <li>✦ 2 baños completos</li><li>✦ Sala de estar</li>
+            <li>✦ Balcón privado</li>
+          </ul>
+          <p class="suite-price">Desde <strong>$400.000</strong> / Noche</p>
+          <a href="contacto.html?suite=superior" class="btn-suite">Consultar Disponibilidad</a>
+        </div>
+      </article>
+
+      <article class="suite-card premium" aria-label="Suite Ejecutiva Premium">
+        <div class="suite-img-wrap">
+          <span class="suite-badge gold">EJECUTIVA ★</span>
+          <img
+            src="img/ejecutiva-1.webp"
+            alt="Suite Ejecutiva Premium con escritorio de trabajo y bañera de lujo"
+            loading="lazy"
+          >
+        </div>
+        <div class="suite-body">
+          <p class="suite-cat">SUITE EJECUTIVA PREMIUM · Hasta 2 personas · Escritorio de trabajo</p>
+          <ul class="suite-amenities" aria-label="Amenidades de la Suite Ejecutiva">
+            <li>✦ Cocina gourmet</li><li>✦ Wi-Fi 200 Mbps</li>
+            <li>✦ Smart TV 55"</li><li>✦ Escritorio ejecutivo</li>
+            <li>✦ Bañera · Minibar</li>
+          </ul>
+          <p class="suite-price gold-price">Desde <strong>$600.000</strong> / Noche</p>
+          <a href="contacto.html?suite=ejecutiva" class="btn-suite gold-btn">Consultar Disponibilidad</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══ SERVICIOS ═══ -->
+  <section class="servicios-section" id="servicios" aria-labelledby="servicios-heading">
+    <div class="section-header light">
+      <p class="section-label">COMPLEMENTA TU ESTADÍA</p>
+      <h2 class="section-title light" id="servicios-heading">Servicios Adicionales</h2>
+      <p class="section-sub">Disponibles para todas las categorías de suite</p>
+    </div>
+    <div class="servicios-grid">
+      <div class="servicio-card">
+        <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4a2 2 0 0 1 2 2v5H16V8Z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <p class="serv-name">Traslados</p>
+        <p class="serv-desc">Aeropuerto Ernesto Cortissoz</p>
+      </div>
+      <div class="servicio-card">
+        <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <p class="serv-name">Sala de Reuniones</p>
+        <p class="serv-desc">Proyector · Video · Aire</p>
+      </div>
+      <div class="servicio-card">
+        <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8Z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        <p class="serv-name">Desayuno</p>
+        <p class="serv-desc">Continental · A la habitación</p>
+      </div>
+      <div class="servicio-card">
+        <svg class="serv-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/><path d="M8 12H4"/><path d="M16 12h4"/></svg>
+        <p class="serv-name">Parqueadero</p>
+        <p class="serv-desc">Cubierto · Vigilado 24h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ NOSOTROS ═══ -->
+  <section class="nosotros-section" id="nosotros" aria-labelledby="nosotros-heading">
+    <div class="nosotros-content">
+      <p class="section-label">NUESTRA HISTORIA</p>
+      <h2 class="section-title" id="nosotros-heading">Sobre Aurora Caribe</h2>
+      <p class="nosotros-text">
+        Nacimos hace 2 años con una misión clara: ofrecer en Barranquilla un alojamiento que combine la privacidad y comodidad de un apartamento propio con el servicio impecable de un hotel de lujo.
+      </p>
+      <p class="nosotros-text">
+        Ubicados en El Prado, el sector residencial más exclusivo de la ciudad, nuestras 12 apart-suites están diseñadas para el viajero exigente que no quiere sacrificar ni un detalle.
+      </p>
+      <a href="contacto.html" class="btn-primary">CONTACTAR AL EQUIPO</a>
+    </div>
+    <div class="nosotros-img-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&auto=format&fit=crop&q=80"
+        alt="Exterior del Apart-Hotel Aurora Caribe en el sector El Prado de Barranquilla"
+        loading="lazy"
+      >
+    </div>
+  </section>
+
+  <!-- ═══ TESTIMONIOS ═══ -->
+  <section class="testi-section" aria-labelledby="testi-heading">
+    <div class="section-header light">
+      <p class="section-label">TESTIMONIOS</p>
+      <h2 class="section-title light" id="testi-heading">Lo que dicen nuestros huéspedes</h2>
+    </div>
+    <div class="testi-grid">
+      <blockquote class="testi-card">
+        <p class="testi-stars" aria-label="5 estrellas">★★★★★</p>
+        <p class="testi-text">"Viajamos en familia y la cocina equipada fue clave. Los niños se sintieron como en casa. Volveremos sin duda."</p>
+        <footer class="testi-author">ANDREA JARAMILLO · BOGOTÁ</footer>
+      </blockquote>
+      <blockquote class="testi-card">
+        <p class="testi-stars" aria-label="5 estrellas">★★★★★</p>
+        <p class="testi-text">"Perfecta para mis viajes de negocios. Wi-Fi excelente, escritorio amplio y ubicación inmejorable en El Prado."</p>
+        <footer class="testi-author">WESTCOL · MEDELLÍN</footer>
+      </blockquote>
+      <blockquote class="testi-card">
+        <p class="testi-stars" aria-label="5 estrellas">★★★★★</p>
+        <p class="testi-text">"Elegante, limpio y con una atención que no esperaba a este precio. Aurora Caribe superó todas mis expectativas."</p>
+        <footer class="testi-author">CARLOS DROMBO · CALI</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <p class="footer-logo">AURORA <span>CARIBE</span></p>
+        <p class="footer-tagline">APART-HOTEL · BARRANQUILLA</p>
+        <p class="footer-desc">Elegancia accesible en el mejor sector de Barranquilla. Tu hogar lejos de casa.</p>
+        <div class="footer-socials" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram de Aurora Caribe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook de Aurora Caribe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="WhatsApp de Aurora Caribe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Contacto</p>
+        <ul aria-label="Información de contacto">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Cra. 54 #72-80, El Prado</li>
+          <li><a href="tel:+573177519175"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.86a16 16 0 0 0 6.07 6.07l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17z"/></svg> (+57) 317 7519175</a></li>
+          <li><a href="mailto:infoauroracaribe.co@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> infoauroracaribe.co@gmail.com</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Check-in disponible 24h</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-col-title">Navegación</p>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="habitaciones.html">Habitaciones</a></li>
+          <li><a href="index.html#servicios">Servicios</a></li>
+          <li><a href="index.html#nosotros">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Aurora Caribe S.A.S. · Barranquilla, Colombia</p>
+      <p><a href="contacto.html#privacidad">Política de privacidad · Ley 1581 de 2012</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
